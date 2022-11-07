@@ -1,0 +1,62 @@
+const path = require('path')
+const HTMLWebpackPlugin = require('html-webpack-plugin')
+module.exports = {
+    mode: 'production',
+    entry: {
+        bundle:'./src/index.ts'
+    },
+    output: {
+        path: path.resolve(__dirname,'dist'),
+        filename: 'index.js',
+        clean: true,
+        assetModuleFilename: '[name][ext]',
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                enforce: 'pre',
+                use: ['source-map-loader'],
+            },
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    "style-loader",
+                    // Translates CSS into CommonJS
+                    "css-loader",
+                    // Compiles Sass to CSS
+                    "sass-loader",
+                ],
+            },
+        ]
+    },
+    plugins: [
+        new HTMLWebpackPlugin({
+            title: 'the app by Observables',
+            filename: 'index.html',
+            template: './src/index.html'
+        })
+    ],
+    devServer: {
+        port:'8000',
+        open:true,
+        liveReload:true,
+        static:['./src','./public']
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
+    }
+}
+// if (process.env.NODE_ENV !== 'production') {
+//     module.exports.plugins = (module.exports.plugins || []).concat([
+//         new HtmlWebpackPlugin({
+//             template: './src/index.html'
+//         })
+//     ])
+// }

@@ -1,4 +1,4 @@
-import { normalObservable , observableByOpeartor } from "./barrel";
+import { normalObservable, observableByOpeartor } from "./barrel";
 
-normalObservable()
-observableByOpeartor()
+normalObservable();
+observableByOpeartor();

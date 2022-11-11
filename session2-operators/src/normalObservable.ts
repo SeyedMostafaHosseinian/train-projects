@@ -1,5 +1,6 @@
 import { Observable } from "rxjs";
 
+/**simulation from and map by normall obsevable and loop */
 export function normalObservable() {
   let arr = [1, 2, 3, 4];
   const normalObservable = new Observable((subscribe) => {

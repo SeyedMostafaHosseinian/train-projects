@@ -1,5 +1,6 @@
 import { map, tap, from } from "rxjs";
 
+/** train operators (map,tap,from) */
 export function observableByOpeartor() {
   let arr = [1, 2, 3, 4];
   const observable = from(arr)

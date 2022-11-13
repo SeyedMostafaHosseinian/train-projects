@@ -1,3 +1,9 @@
-import {creationOperatorsTrain} from "./index";
+import {
+  creationOperatorsTrain,
+  joinCreationOperatorsTrain,
+  transformationOperators,
+} from "./index";
 
-creationOperatorsTrain()
+// creationOperatorsTrain()
+// joinCreationOperatorsTrain()
+// transformationOperators()

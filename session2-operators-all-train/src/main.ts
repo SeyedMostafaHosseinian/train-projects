@@ -1,9 +1,5 @@
 import {
-  creationOperatorsTrain,
-  joinCreationOperatorsTrain,
-  transformationOperators,
+  takeOperator
 } from "./index";
 
-// creationOperatorsTrain()
-// joinCreationOperatorsTrain()
-// transformationOperators()
+takeOperator()

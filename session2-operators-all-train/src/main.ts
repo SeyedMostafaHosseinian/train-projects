@@ -1,5 +1,3 @@
-import {
-  takeOperator
-} from "./index";
+import { takeOperatorfun } from "./index";
 
-takeOperator()
+takeOperatorfun()

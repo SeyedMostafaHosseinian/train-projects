@@ -1,4 +1,1 @@
-
-//filtering operators
-  //take oprator
-  export * from './takeOperator';
+export * from './filteringOperators/takeOperator'

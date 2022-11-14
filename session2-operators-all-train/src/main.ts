@@ -1,6 +1,23 @@
-import { takeOperatorfun,debounceTimefun } from "./index";
+import {
+  takeOperatorfun,
+  debounceTimefun,
+  filterOperatorfun,
+  mergeAllOperator,
+  multicastfun,
+  catchErrorOperatorFun,
+  shareOperatorFun
+
+} from "./index";
 
 
 //filteringOperator functions
-takeOperatorfun()
-debounceTimefun()
+  // takeOperatorfun()
+  // filterOperatorfun()
+  // debounceTimefun()
+//join operators
+//   mergeAllOperator()
+// multiCasting operators
+  // multicastfun()
+  shareOperatorFun()
+//errorBundling operators
+//   catchErrorOperatorFun()

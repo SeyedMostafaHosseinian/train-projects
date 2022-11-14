@@ -1,3 +1,6 @@
-import { takeOperatorfun } from "./index";
+import { takeOperatorfun,debounceTimefun } from "./index";
 
+
+//filteringOperator functions
 takeOperatorfun()
+debounceTimefun()

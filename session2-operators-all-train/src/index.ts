@@ -33,3 +33,6 @@ export * from "./utilityOperators/tapOperators";
 
 //conditional & boolean operators
 export * from "./conditionall-&-boolean operators/findOperator";
+
+//mathemetical operators
+export * from "./mathmeticalOperators/countOperator";

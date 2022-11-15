@@ -1,25 +1,36 @@
 import {
   //creation
-  ofOperatorFun,
-  fromOperatorFun,
   intervalOperatorFun,
   deferOperatorFun,
   rangeOperatorFun,
+  fromOperatorFun,
+  ofOperatorFun,
+
   //transformation
 
   //filtering
   filterOperatorfun,
   takeOperatorfun,
   debounceTimefun,
+
   //join
   mergeAllOperator,
+
   //multicasting
   multicastfun,
   shareOperatorFun,
+
   // error bundling
   catchErrorOperatorFun,
+
   //utility operators
   tapOperatorFun,
+
+  //conditional & boolean operators
+  findOperatorFun,
+
+  //mathemetical operators
+  countOperatorFun,
 } from "./index";
 
 //creationOperator functions
@@ -44,5 +55,11 @@ import {
 //errorBundling functions
 // catchErrorOperatorFun();
 
-// utility operators
-tapOperatorFun();
+// utility functions
+// tapOperatorFun();
+
+// conditional & boolean functions
+// findOperatorFun();
+
+//mathemetical functions
+countOperatorFun();

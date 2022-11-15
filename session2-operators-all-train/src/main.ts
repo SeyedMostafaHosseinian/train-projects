@@ -1,23 +1,48 @@
 import {
+  //creation
+  ofOperatorFun,
+  fromOperatorFun,
+  intervalOperatorFun,
+  deferOperatorFun,
+  rangeOperatorFun,
+  //transformation
+
+  //filtering
+  filterOperatorfun,
   takeOperatorfun,
   debounceTimefun,
-  filterOperatorfun,
+  //join
   mergeAllOperator,
+  //multicasting
   multicastfun,
+  shareOperatorFun,
+  // error bundling
   catchErrorOperatorFun,
-  shareOperatorFun
-
+  //utility operators
+  tapOperatorFun,
 } from "./index";
 
+//creationOperator functions
+// ofOperatorFun();
+// fromOperatorFun();
+// intervalOperatorFun();
+// deferOperatorFun();
+// rangeOperatorFun();
 
 //filteringOperator functions
-  // takeOperatorfun()
-  // filterOperatorfun()
-  // debounceTimefun()
+// takeOperatorfun();
+// filterOperatorfun();
+// debounceTimefun();
+
 //join operators
-//   mergeAllOperator()
+// mergeAllOperator();
+
 // multiCasting operators
-  // multicastfun()
-  shareOperatorFun()
-//errorBundling operators
-//   catchErrorOperatorFun()
+// multicastfun();
+// shareOperatorFun();
+
+//errorBundling functions
+// catchErrorOperatorFun();
+
+// utility operators
+tapOperatorFun();

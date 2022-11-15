@@ -8,5 +8,6 @@ export function findOperatorFun() {
     },
   });
 }
+
 //output
 // 25

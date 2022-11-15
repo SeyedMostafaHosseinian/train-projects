@@ -6,7 +6,20 @@ import {
   fromOperatorFun,
   ofOperatorFun,
 
+  //join creation
+  zipOperatorFun,
+  forkjoinOperatorFun,
+  mergeOperatorFun,
+  partitionOperatorFun,
+  concatOperatorFun,
+
   //transformation
+  mapOperatorFun,
+  concatMapOperatorFun,
+  mergeMapOperatorFun,
+  bufferTimeOperatorFun,
+  switchMapOperatorFun,
+  scanOperatorFun,
 
   //filtering
   filterOperatorfun,
@@ -33,12 +46,30 @@ import {
   countOperatorFun,
 } from "./index";
 
+//use modules =>
+
 //creationOperator functions
 // ofOperatorFun();
 // fromOperatorFun();
 // intervalOperatorFun();
 // deferOperatorFun();
 // rangeOperatorFun();
+
+//join creation functions
+// zipOperatorFun()
+// mergeOperatorFun()
+// concatOperatorFun()
+// partitionOperatorFun()
+// forkjoinOperatorFun()
+
+//transformation operators
+// mapOperatorFun()
+// concatMapOperatorFun()
+// mergeMapOperatorFun()
+// bufferTimeOperatorFun()
+// switchMapOperatorFun()
+// scanOperatorFun()
+
 
 //filteringOperator functions
 // takeOperatorfun();
@@ -62,4 +93,4 @@ import {
 // findOperatorFun();
 
 //mathemetical functions
-countOperatorFun();
+// countOperatorFun();

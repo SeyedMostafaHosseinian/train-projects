@@ -17,6 +17,7 @@ export function debounceTimefun() {
       }
     })
 }
+
 //It was clicked 4 times in a row
 // after 2 secound
 // log : 1click

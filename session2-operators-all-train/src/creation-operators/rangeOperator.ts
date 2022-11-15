@@ -1,4 +1,5 @@
 import { range } from "rxjs";
+
 export function rangeOperatorFun() {
   const numbers = range(1, 25);
 

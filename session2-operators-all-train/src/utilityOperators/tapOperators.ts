@@ -1,19 +1,19 @@
 import { from, interval, map, mergeAll, tap } from "rxjs";
 
 export function tapOperatorFun() {
-    const data = interval(1000);
-    const example = data.pipe(
-        tap(val => console.log(`logged by tap : ${val}`)),
-        map(val => val * 2),
-    )
-    example.subscribe({
-        next(val) {
-            console.log(`change and log by map : ${val}`)
-        }
-    })
+  const data = interval(1000);
+  const example = data.pipe(
+    tap(val => console.log(`logged by tap : ${val}`)),
+    map(val => val * 2),
+  )
+  example.subscribe({
+    next(val) {
+      console.log(`change and log by map : ${val}`)
+    }
+  })
 }
 
-//output => 
+//output =>
 // change and log by map : 0
 // logged by tap : 1
 // change and log by map : 2

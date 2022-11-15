@@ -1,12 +1,20 @@
 import { BehaviorSubject } from 'rxjs';
 
 export function behavioralSubjectTrain() {
-  const behaviorSubject = new BehaviorSubject<number | string>("init")
-  behaviorSubject.subscribe(value => console.log(value,"observer 0"))
-  behaviorSubject.next(5)
-  behaviorSubject.subscribe(value => console.log(value, "observer 1"))
+  const behaviorSubject = new BehaviorSubject(0)
   behaviorSubject.next(10)
+
+  const observer1 = behaviorSubject.subscribe({
+    next(val) {
+      console.log(val, "by observer1","behavior observable")
+    }
+  })
   behaviorSubject.next(20)
-  behaviorSubject.subscribe(value => console.log(value, "observer 2"))
+  const observer2 = behaviorSubject.subscribe({
+    next(val) {
+      console.log(val, 'by observer2',"behavior observable")
+    }
+  })
+  behaviorSubject.next(30)
 
 }

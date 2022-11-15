@@ -1,9 +1,11 @@
 import {
   subjectTrain,
   behavioralSubjectTrain,
-  replaySubjectTrain
+  replaySubjectTrain,
+  asyncSubjectTrain
 } from './index';
 
-subjectTrain()
-behavioralSubjectTrain()
+// subjectTrain()
+// behavioralSubjectTrain()
 replaySubjectTrain()
+// asyncSubjectTrain()

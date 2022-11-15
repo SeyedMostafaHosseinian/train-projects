@@ -7,5 +7,5 @@ import {
 
 // subjectTrain()
 // behavioralSubjectTrain()
-replaySubjectTrain()
-// asyncSubjectTrain()
+// replaySubjectTrain()
+asyncSubjectTrain()

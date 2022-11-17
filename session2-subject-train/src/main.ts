@@ -7,7 +7,6 @@ import {
 // subjectTrain()
 // behavioralSubjectTrain()
 // replaySubjectTrain()
-<<<<<<< HEAD
 // asyncSubjectTrain()
 
 
@@ -27,6 +26,3 @@ function deleteAndStringer(arr:string[]) {
 }
 
 deleteAndStringer(splitter(trimmer("myNameis")))
-=======
-asyncSubjectTrain()
->>>>>>> a812103a17fc3a6b8ca2357d7dd6bc65a5f57d0b

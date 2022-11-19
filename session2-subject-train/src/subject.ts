@@ -17,4 +17,3 @@ export function subjectTrain() {
   normalSubject.next(20)
   normalSubject.next(30)
 }
-

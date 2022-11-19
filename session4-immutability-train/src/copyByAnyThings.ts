@@ -12,14 +12,18 @@ export function copyObjectByAnyThings() {
       sound: "voice1.mp3",
     },
   };
-  const copyObject: {subId?:string , id?: number , media?: { video?:string | {} , image?: string , sound?: string } } = copy(main); //copy
+  const copyObject: {
+    subId?: string;
+    id?: number;
+    media?: { video?: string | {}; image?: string; sound?: string };
+  } = copy(main); //copy
   ///changing the media field
   copyObject.media = {
     ...copyObject.media,
-    image:"changedImage.jpeg"
-  }
+    image: "changedImage.jpeg",
+  };
   // add a field :
-  
+
   console.log(main, "main object");
   console.log(copyObject, "copied object");
   console.log(copyObject === main, "the comparission objects 'main === copyObject'"); //false

@@ -41,7 +41,7 @@ module.exports = {
     })
   ],
   devServer: {
-    port: '8000',
+    port: '8005',
     open: true,
     liveReload: true,
     static: ['./src', './public']

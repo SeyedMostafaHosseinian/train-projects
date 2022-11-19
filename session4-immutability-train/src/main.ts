@@ -1,2 +1,3 @@
-import { copyObjectImmutable } from "./index";
-copyObjectImmutable()
+import { copyObjectImmutable,copyObjectByAnyThings } from "./index";
+// copyObjectImmutable()
+copyObjectByAnyThings()

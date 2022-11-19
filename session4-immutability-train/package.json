@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "copy-anything": "^3.0.2",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "immer": "^9.0.16",

@@ -1,1 +1,2 @@
-export * from "./copyObjectByImmer"
+export * from "./copyObjectByImmer";
+export * from "./copyByAnyThings"

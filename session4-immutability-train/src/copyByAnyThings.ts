@@ -24,7 +24,7 @@ export function copyObjectByAnyThings() {
   };
   // add a field :
 
-  console.log(main, "main object");
-  console.log(copyObject, "copied object");
-  console.log(copyObject === main, "the comparission objects 'main === copyObject'"); //false
+  console.log(main, "main object","copy by any-things package");
+  console.log(copyObject, "copied object","copy by any-things package");
+  console.log(copyObject === main, "the comparission objects 'main === copyObject'","copy by any-things package"); //false
 }

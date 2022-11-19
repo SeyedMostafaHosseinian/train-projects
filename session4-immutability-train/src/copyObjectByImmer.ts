@@ -1,5 +1,6 @@
 import { produce } from "immer";
-export function copyObjectImmutable() {
+
+export function copyObjectByImmer() {
   const mainObj: { name: string; age: number; addres?: { street?: string; region?: number } } = {
     name: "jack",
     age: 20,

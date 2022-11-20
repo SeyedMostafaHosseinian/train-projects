@@ -6,7 +6,6 @@ import {
   FETCH_DATA_SUCCESS
 } from '../actionTypes/requestActionTypes';
 import axios from 'axios';
-import { AnyAction } from 'redux';
 
 export const sendRequest = (): postActionInterface => {
   return {
@@ -26,12 +25,10 @@ export const failureGet = (error: string): postActionInterface => {
   }
 }
 export const fetchData = () => {
-  return () => {
-    store.dispatch(sendRequest())
+  return (dispatch:any) => {
+    dispatch(sendRequest())
     axios.get('https://jsonplaceholder.typicode.com/posts')
-      .then(response => store.dispatch(succesGet(response.data)))
-      .catch(error => store.dispatch(failureGet(error)))
+      .then(response => dispatch(succesGet(response.data)))
+      .catch(error => dispatch(failureGet(error)))
   }
-
-
 }

@@ -25,7 +25,7 @@ export const failureGet = (error: string): postActionInterface => {
   }
 }
 export const fetchData = () => {
-
+  
   store.dispatch(sendRequest())
   axios.get('https://jsonplaceholder.typicode.com/posts')
     .then(response => store.dispatch(succesGet(response.data)))

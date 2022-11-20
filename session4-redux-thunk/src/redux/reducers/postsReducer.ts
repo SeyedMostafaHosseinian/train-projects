@@ -19,16 +19,16 @@ export const postsReducer = (state: postStateInterface = initialState, action: p
         draftObject.lodaing = true
       })
     case FETCH_DATA_SUCCESS:
-      return produce(state, (draftObject: postStateInterface) => {
-        draftObject.lodaing
-        // @ts-ignore
+      return produce(state, (draftObject: Record<string, any>) => {
+        draftObject.lodaing = false
         draftObject.data = action.payload
       })
     case FETCH_DATA_FAILURE :
       return produce(state, (draftObject: postStateInterface) => {
         draftObject.lodaing = false
-        // @ts-ignore
-        draftObject.error = action.payload
+        if (typeof action.payload === "string") {
+          draftObject.error = action.payload
+        }
       })
     default :
       return state

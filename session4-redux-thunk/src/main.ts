@@ -1,6 +1,7 @@
 import { store } from './redux/store';
 import { fetchData } from './redux/actions/requestActions';
-fetchData()
+store.dispatch(fetchData())
 const unsunbscribe = store.subscribe(() => {
   console.log("new event", store.getState())
 })
+unsunbscribe()

@@ -12,7 +12,7 @@ const initialState: postStateInterface = {
   data: [],
   error: ""
 }
-export const postsReducer = (state: postStateInterface = initialState, action: postActionInterface) => {
+export const postsReducer = (state: postStateInterface = initialState, action:any ) => {
   switch (action.type) {
     case FETCH_DATA_SEND :
       return produce(state, (draftObject: postStateInterface) => {
